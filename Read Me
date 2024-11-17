@@ -1,0 +1,80 @@
+# Used to make a virtual envionment  
+> pip install virtualenv
+
+virtual
+
+Set-ExecutionPolicy unrestricted
+
+pip install virtualenv  virtualenv env
+
+
+.\env\Scripts\activate
+
+pip install --user virtualenv
+
+python -m virtualenv venv
+
+
+
+
+
+
+To activate:
+
+-cd venv
+-cd Scripts
+-activate.bat
+to deactivate:
+
+-deactivate.bat
+to run venv again just type activate.bat
+
+
+# installing virtual enviornmnet
+> pip install --user virtualenv
+
+# making virtual enviornment as we dont to distrub the main python files
+# Ex: a system can only one python version but we want to use python v1 for project 1 and v2 for project2 so this env file isolates(makes copy of python , change seen only this enviornment)
+> python -m virtualenv venv
+
+# activate enviornment
+# means ab jo bhi kaam krenge apn is enviornmnet mekrenge
+> .\venv\Scripts\activate.ps1  
+
+# installing flask
+>  pip install flask
+
+# make app.py file
+
+# to run app file ( server )
+> python app.p
+
+# Static folder
+> isme jo bhi hm dalte he usko hm simply serve kr skte he,like this. 
+http://127.0.0.1:3000/static/pyvenv
+
+# Template Folder
+> used to store templates like.html.
+> served using " render_template "
+
+# Making Database
+> SqlAlchemy : used to access databse using python
+> pip install flask-sqlalchemy 
+
+> python
+> from app import db
+> db.create_all()
+
+
+# to deploy the website
+> will freeze the code.
+> pip install gunicorn (used to serve application in multiple threads)
+> pip freeze > requirements.txt
+> make a procfile file for deploying websites.
+> The Procfile tells Render how to run your application, which is essential for services like Render to correctly start your Flask app in a production environment.
+
+
+
+
+
+
